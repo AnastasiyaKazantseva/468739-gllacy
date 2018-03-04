@@ -2,11 +2,140 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllasy Shop</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="" height="" alt="Логотип Gllasy Shop">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="gllasy-catalog.html">Каталог</a></li>
+          <li><a href="shipping.html">Доставка и оплата</a></li>
+          <li><a href="info.html">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="search"><a href="#">Поиск</a></li>
+          <li class="login-link"><a href="#">Вход</a></li>
+          <li class="cart"><a href="#">Пусто</a></li>
+        </ul>
+        <div class="working-info">
+          <p>С 10 до 20, ежедневно</p>
+          <b>8 812 450-25-25</b>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <h1 class="visually-hidden">Gllacy Shop</h1>
+           
+      <section class="index-slider">
+        <h2 class="visually-hidden">Новинки</h2>
+       	<div class="slider">
+		      <div class="slides slide1">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <a class="button" href="#">Давайте оба!</a>
+          </div>
+		      <div class="slides slide2">
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+            <a class="button" href="#">Давайте оба!</a>
+          </div>
+		      <div class="slides slide3">
+            <p>Пломбир с помадкой и клубничный щербет</p>
+            <a class="button" href="#">Давайте оба!</a>
+          </div>
+          <input type="radio" name="point" id="slide1">
+	        <input type="radio" name="point" id="slide2">
+	        <input type="radio" name="point" id="slide3">
+	      </div>	
+	      <div class="controls">
+		      <label for="slide1"></label>
+		      <label for="slide2"></label>
+		      <label for="slide3"></label>
+        </div>
+      </section>
+      <section class="index-stock">
+        <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button" href="#">Хочу варенье!</a>
+      </section>
+      <section class="index-stock">
+        <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="button" href="#">Хочу шоколадки!</a>
+      </section>
+      <section class="index-hits">
+        <h2 class="visually-hidden">Хиты</h2>
+        <ul class="hits-list">
+          <li class="hit-item">
+            <p class="hit-item-image">
+              <a href="gllacy-catalog.html">
+                <img src="img/hit-1.jpg" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </a>
+            </p>
+            <p class="hits-item-price">
+              <b>310</b>
+              <span>/кг</span>
+            </p>
+            <a href="gllacy-catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </li>
+          <li class="hit-item">
+            <p class="hit-item-image">
+              <a href="gllacy-catalog.html">
+                <img src="img/hit-2.jpg" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
+              </a>
+            </p>
+            <p class="hits-item-price">
+              <b>380</b>
+              <span>/кг</span>
+            </p>
+            <a href="gllacy-catalog.html">Сливочно-кофейное с кусочками шоколада</a>
+          </li>
+          <li class="hit-item">
+            <p class="hit-item-image">
+              <a href="gllacy-catalog.html">
+                <img src="img/hit-3.jpg" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </a>
+            </p>
+            <p class="hits-item-price">
+              <b>355</b>
+              <span>/кг</span>
+            </p>
+            <a href="gllacy-catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </li>
+          <li class="hit-item">
+            <p class="hit-item-image">
+              <a href="gllacy-catalog.html">
+                <img src="img/hit-4.jpg" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
+              </a>
+            </p>
+            <p class="hits-item-price">
+              <b>415</b>
+              <span>/кг</span>
+            </p>
+            <a href="gllacy-catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
+          </li>
+        </ul>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <h3>Магазин Глэйси — это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
+        <ul class="features-list">
+          <li class="feature-item">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
