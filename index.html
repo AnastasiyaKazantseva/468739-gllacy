@@ -95,6 +95,7 @@
             </p>
             <p class="catalog-item-price"><span>310</span>/кг</p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -104,6 +105,7 @@
             </p>
             <p class="catalog-item-price"><span>380</span>/кг</p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -113,6 +115,7 @@
             </p>
             <p class="catalog-item-price"><span>355</span>/кг</p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -122,6 +125,7 @@
             </p>
             <p class="catalog-item-price"><span>415</span>/кг</p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -201,11 +205,13 @@
     </footer>
 
     <section class="user-navigation-sub search">
-      <input type="text" placeholder="Что ищем?">
+      <h2 class="visually-hidden">Поиск</h2>
+      <input type="search" placeholder="Что ищем?">
     </section>
 
     <section class="user-navigation-sub login">
-      <form action="#" method="GET">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form action="#" method="post">
         <input type="email" name="email" placeholder="Электронная почта">
         <input type="password" name="password" placeholder="Пароль">
         <input class="button" type="submit" value="Войти">
@@ -217,7 +223,7 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <form action="#" method="GET">
+      <form action="#" method="post">
         <input type="text" name="name" placeholder="Как вас зовут?">
         <input type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea rows="6" cols="30" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
