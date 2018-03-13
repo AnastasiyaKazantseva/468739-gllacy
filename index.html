@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Gllacy Shop</title>
+    <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -57,7 +59,7 @@
     </header>
     <main class="container">
 
-      <h1 class="visually-hidden">Gllacy Shop</h1>
+      <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
 
       <section class="index-slider">
         <h2 class="visually-hidden">Новинки</h2>
@@ -78,12 +80,17 @@
             <a class="button" href="#">Давайте оба!</a>
           </li>
         </ul>
-        <label class="visually-hidden" for="slide1">Слайд 1</label>
-        <input type="radio" name="point" id="slide1" value="">
-        <label class="visually-hidden" for="slide2">Слайд 2</label>
-        <input type="radio" name="point" id="slide2" value="">
-        <label class="visually-hidden" for="slide3">Слайд 3</label>
-	      <input type="radio" name="point" id="slide3" value="">
+        <ul class="slide-controls">
+          <li class="slide-radio">
+            <button class="slide-button">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button">Третий слайд</button>
+          </li>
+        </ul>
       </section>
       <section class="index-stock">
         <h2 class="visually-hidden">Акции</h2>
