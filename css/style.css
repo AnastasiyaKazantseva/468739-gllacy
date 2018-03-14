@@ -42,9 +42,6 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus
-
 .visually-hidden {
   position: absolute;
   width: 1px;
