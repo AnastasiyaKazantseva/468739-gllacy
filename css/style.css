@@ -30,18 +30,220 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  text-align: left;
   color: #ffffff;
+
   background-color: #849d8f;
 }
 
 a {
+  color: #ffffff;
+
   text-decoration: none;
 }
 
-.button {
-  font: inherit;
+a:hover,
+a:focus
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   text-align: center;
+  color: #ffffff;
   vertical-align: middle;
+
+  background-image: linear-gradient(#f26843, #e74a35);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f17b64;
+  background-image: none;
+  box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.button:active {
+  background-image: linear-gradient(#e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px #942718;
+}
+
+.button.button-big {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.site-navigation,
+.user-navigation,
+.navigation-sub,
+.slider,
+.slide-controls,
+.stock-list,
+.catalog-list,
+.features-list {
+  list-style: none;
+}
+
+.site-navigation a,
+.catalog-list h3 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-position: under;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #333333;
+
+  background-color: #f7f6f3;
+  text-decoration: none;
+}
+
+.site-navigation a:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+.navigation-sub a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #333333;
+
+  text-decoration: none;
+}
+
+.navigation-sub .navigation-sub-first {
+  font-weight: 700;
+}
+
+.navigation-sub a:hover,
+.navigation-sub a:hover,
+.navigation-sub-hover {
+  background-color: #fbded7;
+}
+
+.navigation-sub a:active {
+  background-color: #f6b5a5;
+  box-shadow: none;
+}
+
+.site-navigation .navigation-current > a,
+.navigation-sub .navigation-current a {
+  color: #ffffff;
+
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+.user-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.working-info {
+  font-weight: 700;
+}
+
+.working-info p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.working-info b {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slider p {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stock-list h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+.stock-list p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.catalog-list h3 {
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.catalog-item-price {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-price span {
+  font-size: 45px;
+}
+
+.features {
+  color: #323232;
+}
+
+.features b {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.index-news {
+  color: #323232;
+}
+
+.index-news p {
+  font-weight: 500;
+}
+
+.index-news a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+
+.filters fieldset {
   border: none;
 }
