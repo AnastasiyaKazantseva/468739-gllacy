@@ -36,8 +36,7 @@ body {
   background-color: #849d8f;
 }
 
-a,
-.catalog-list h3 {
+a {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -52,6 +51,8 @@ a:active {
 }
 
 a.contrast {
+  font-size: 13px;
+  line-height: 24px;
   color: #323232;
   border-bottom-color: rgba(50, 50, 50, 0.2);
 }
@@ -63,7 +64,7 @@ a.contrast:active {
   border-bottom-color: rgba(232, 77, 55, 0.2);
 }
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -72,7 +73,7 @@ a.contrast:active {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+}*/
 
 .button,
 a.button {
@@ -105,6 +106,10 @@ a.button {
   line-height: 44px;
 }
 
+.main-header-logo {
+  border-bottom: none;
+}
+
 .site-navigation,
 .user-navigation,
 .navigation-sub,
@@ -114,7 +119,10 @@ a.button {
 .catalog-list,
 .features-list,
 .footer-navigation ul,
-.footer-social ul {
+.footer-social ul,
+.breadcrumbs,
+.filters ul,
+.pagination-list {
   list-style: none;
 }
 
@@ -269,6 +277,26 @@ input:focus:-ms-input-placeholder {
   background-color: #f8f7f4;
 }
 
+.user-navigation-sub .cart-form {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.cart-form img {
+  border-radius: 50%;
+}
+
+.cart-form .price-per-kg {
+  color: rgba(50, 50, 50, 0.5);
+}
+
+.cart-form .price-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
 .working-info {
   font-weight: 700;
 }
@@ -312,9 +340,18 @@ input:focus:-ms-input-placeholder {
   background-repeat: no-repeat;
 }
 
-.catalog-list h3 {
+.catalog-list .item {
   font-weight: 500;
   text-align: center;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-item-image img {
+  border-radius: 50%;
 }
 
 .catalog-item-price {
@@ -385,10 +422,6 @@ input:focus:-ms-input-placeholder {
   font-weight: 700;
 }
 
-.filters fieldset {
-  border: none;
-}
-
 .modal-feedback {
   box-shadow: none;
 }
@@ -399,3 +432,97 @@ input:focus:-ms-input-placeholder {
   font-weight: 500;
   color: #323232;
 }
+
+.breadcrumbs-current {
+  border-bottom: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters-form {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filters-form legend,
+.filters-form option {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters select,
+.filters div,
+.filters ul {
+  background-color: #9db1a5;
+  border-radius: 20px;
+
+}
+
+.filters select {
+  font: inherit;
+  color: #ffffff;
+  border-color: #9db1a5;
+}
+
+.filters select:hover,
+.filters select:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filters option {
+  color: #323232;
+}
+
+.filters-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #9cb0a4;
+  border: 2px solid #ffffff;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filters-button:active {
+  color: #323232;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  border-bottom: none;
+
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.pagination-item a:active,
+.pagination-list .pagination-item-current a {
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+
+.pagination-list .disabled a {
+  color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+}
+
