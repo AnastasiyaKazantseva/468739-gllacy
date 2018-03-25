@@ -14,87 +14,96 @@
       <div class="site-wrapper">
           <div class="content-wrapper">
   <header class="main-header">
+
     <nav class="main-navigation">
-      <div class="container">
+
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
         <ul class="site-navigation">
-          <li>
-            <a href="#">Каталог</a>
-            <!--
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Каталог</a>
+            <div class="navigation-sub-wrap">
             <ul class="navigation-sub">
-              <li>
-                <a class="navigation-sub-first" href="#">Новинки</a>
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-first">Новинки</a>
               </li>
-              <li>
+              <li class="navigation-sub-item">
                 <a href="catalog.html">Сливочное</a>
               </li>
-              <li>
-                <a class="navigation-sub-hover" href="#">Щербеты</a>
+              <li class="navigation-sub-item">
+                <a class="navigation-sub-hover">Щербеты</a>
               </li>
-              <li>
+              <li class="navigation-sub-item">
                 <a href="#">Фруктовый лед</a>
               </li>
-              <li>
+              <li class="navigation-sub-item">
                 <a href="#">Мелорин</a>
               </li>
             </ul>
-            -->
+          </div>
           </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка и оплата</a>
           </li>
-          <li>
-            <a href="#">О Компании</a>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">О Компании</a>
           </li>
         </ul>
         <ul class="user-navigation">
-          <li class="search">
-            <a href="#">Поиск</a>
+          <li>
+            <a class="user-navigation-link search-button" href="#">Поиск</a>
+
+            <section class="search-wrap">
+                <h2 class="visually-hidden">Форма поиска</h2>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label class="visually-hidden" for="search">Строка поиска</label>
+                  <input id="search" type="search" name="search" value="" placeholder="Что ищем?">
+                </form>
+              </section>
+
           </li>
-          <li class="login-link">
-            <a href="#">Вход</a>
+          <li>
+            <a class="user-navigation-link login-button" href="#">Вход</a>
           </li>
-          <li class="cart">
-            <a href="#">Пусто</a>
+          <li>
+            <a  class="user-navigation-link cart-button" href="#">Пусто</a>
           </li>
         </ul>
-      </div>
-      <div class="container">
-        <div class="working-info">
-          <p>С 10 до 20, ежедневно</p>
-          <span>8 812 450-25-25</span>
-        </div>
-      </div>
     </nav>
+    <div class="working-info">
+        <p>С 10 до 20, ежедневно</p>
+        <span>8 812 450-25-25</span>
+      </div>
   </header>
-  <section class="index-slider">
-      <h2 class="visually-hidden">Новинки</h2>
-      <div class="slider-controls">
-          <label for="product-1">Первый</label>
-          <label for="product-2">Второй</label>
-          <label for="product-3">Третий</label>
-        </div>
-       <ul class="slider-list">
-        <li class="slider-item slide" id="slide1">
-          <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-          <a class="button button-big" href="#">Давайте оба!</a>
-        </li>
-        <li class="slider-item slide" id="slide2">
-          <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
-          <a class="button button-big" href="#">Давайте оба!</a>
-        </li>
-        <li class="slider-item slide" id="slide3">
-          <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-          <a class="button button-big" href="#">Давайте оба!</a>
-        </li>
-      </ul>
-      </section>
 
-    <main class="container">
+
+    <main class="page-content">
 
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
+
+      <section class="index-slider">
+          <h2 class="visually-hidden">Новинки</h2>
+          <div class="slider-controls">
+              <label for="product-1">Первый</label>
+              <label for="product-2">Второй</label>
+              <label for="product-3">Третий</label>
+            </div>
+           <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button button-big" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button button-big" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button button-big" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+          </section>
 
       <section class="index-stock">
         <h2 class="visually-hidden">Акции</h2>
@@ -255,15 +264,7 @@
       </div>
     </footer>
 
-    <section class="user-navigation-sub search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label class="visually-hidden" for="search">Строка поиска</label>
-          <input id="search" type="search" name="search" value="" placeholder="Что ищем?">
-        </p>
-      </form>
-    </section>
+
 
     <section class="user-navigation-sub login">
       <h2 class="visually-hidden">Личный кабинет</h2>
