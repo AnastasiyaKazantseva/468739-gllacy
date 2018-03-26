@@ -49,10 +49,12 @@
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">О Компании</a>
           </li>
+
+
         </ul>
         <ul class="user-navigation">
-          <li>
-            <a class="user-navigation-link search-button" href="#">Поиск</a>
+          <li class="user-navigation-item">
+            <a  class="user-navigation-link search-button" href="#">Поиск</a>
 
             <section class="search-wrap">
                 <h2 class="visually-hidden">Форма поиска</h2>
@@ -63,18 +65,43 @@
               </section>
 
           </li>
-          <li>
+          <li class="user-navigation-item">
             <a class="user-navigation-link login-button" href="#">Вход</a>
+
+            <section class="login-wrap">
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="login-email">Электронная почта</label>
+                    <input id="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="password">Пароль</label>
+                    <input id="password" type="password" name="password" value="" placeholder="Пароль">
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+                  <div class="login-form-links">
+                    <a class="login-form-link" href="#">
+                      <span>Забыли пароль?</span>
+                    </a>
+                    <a class="login-form-link" href="#">
+                      <span>Новая регистрация</span>
+                    </a>
+                </div>
+                </form>
+              </section>
           </li>
-          <li>
-            <a  class="user-navigation-link cart-button" href="#">Пусто</a>
+
+          <li class="user-navigation-item">
+            <a class="user-navigation-link cart-button" href="#">Пусто</a>
           </li>
         </ul>
-    </nav>
-    <div class="working-info">
+        <div class="working-info">
         <p>С 10 до 20, ежедневно</p>
         <span>8 812 450-25-25</span>
       </div>
+    </nav>
+
   </header>
 
 
@@ -263,29 +290,10 @@
         &copy; 2017</p>
       </div>
     </footer>
+</div>
 
 
 
-    <section class="user-navigation-sub login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="login-email">Электронная почта</label>
-          <input id="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="password">Пароль</label>
-          <input id="password" type="password" name="password" value="" placeholder="Пароль">
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <p>
-          <a class="contrast" href="#">Забыли пароль?</a>
-        </p>
-        <p>
-          <a class="contrast" href="#">Новая регистрация</a>
-        </p>
-      </form>
-    </section>
 
     <section class="modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -307,7 +315,7 @@
       </form>
       <button type="button" class="modal-close">Закрыть окно</button>
       </section>
-      </div>
+
       </div>
   </body>
 </html>
