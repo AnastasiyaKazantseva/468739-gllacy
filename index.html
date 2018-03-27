@@ -148,8 +148,6 @@
         </ul>
       </section>
 
-
-
       <section class="catalog">
         <h2 class="visually-hidden">Каталог хитов</h2>
         <ul class="catalog-list">
@@ -161,7 +159,7 @@
               <img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
             <p class="catalog-item-price"><span>310</span>/кг</p>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
           <li class="catalog-item">
             <h3>
@@ -171,7 +169,7 @@
               <img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </p>
             <p class="catalog-item-price"><span>380</span>/кг</p>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
           <li class="catalog-item">
             <h3>
@@ -181,7 +179,7 @@
               <img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
             <p class="catalog-item-price"><span>355</span>/кг</p>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
           <li class="catalog-item">
             <h3>
@@ -191,66 +189,73 @@
               <img src="img/item-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </p>
             <p class="catalog-item-price"><span>415</span>/кг</p>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
         </ul>
       </section>
+
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <b>Магазин Глэйси — это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</b>
+        <h3>Магазин Глэйси — это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
         <ul class="features-list">
-          <li class="feature-item">
+          <li class="feature-item cream">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li class="feature-item">
-           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </li>
-          <li class="feature-item">
+          <li class="feature-item cow">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
-          <li class="feature-item">
+          <li class="feature-item eco">
+           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </li>
+          <li class="feature-item termo">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
       </section>
 
-
+<div class="column">
       <article class="index-news">
         <h2 class="visually-hidden">Новости блога</h2>
         <p>Новое в нашем блоге</p>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        <div class="news-content">
+        <a class="news-content-link" href="#"><span>10 способов сервировки фруктовых щербетов к столу</span></a>
+      </div>
       </article>
 
       <section class="index-newsletter">
         <h2 class="visually-hidden">Рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <label class="visually-hidden" for="newsletter-email">Электронная почта</label>
-          <input id="newsletter-email" type="email" name="newsletter-email" value="" placeholder="Электронная почта">
-          <button class="button" type="submit">Отправить</button>
+          <input id="newsletter-email" type="email" name="newsletter-email" placeholder="Электронная почта">
+          <button class="button button-newsletter" type="submit">Отправить</button>
         </form>
       </section>
+    </div>
 
 
       <section class="index-map">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <img src="img/map.jpg" width="1200" height="640" alt="Адрес: улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+        <div class="map">
+          <!--<img src="img/map.jpg" width="1200" height="640" alt="Адрес: улица Большая Конюшенная, дом 19/8, Санкт-Петербург">-->
+        </div>
         <div class="map-info">
           <p>
-            Адрес главного офиса и<br>
-            офлайн-магазина:<br>
+            Адрес главного офиса<br>
+            и офлайн-магазина:<br>
             <span>ул. Большая Конюшенная<br>
             19/8, Санкт-Петербург</span>
           </p>
           <p>
             Для заказов по телефону:<br>
-            <span>8 812 450-25-25</span><br>
+            <b>8 812 450-25-25</b><br>
             (с 10 до 20 ежедневно)
           </p>
           <a class="button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
+
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
