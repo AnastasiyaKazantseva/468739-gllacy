@@ -151,7 +151,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог хитов</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item hit">
             <h3>
               <a class="item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h3>
@@ -161,7 +161,7 @@
             <p class="catalog-item-price"><span>310</span>/кг</p>
             <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item hit">
             <h3>
               <a class="item" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </h3>
@@ -171,7 +171,7 @@
             <p class="catalog-item-price"><span>380</span>/кг</p>
             <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item hit">
             <h3>
               <a class="item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
@@ -181,7 +181,7 @@
             <p class="catalog-item-price"><span>355</span>/кг</p>
             <!--<a class="button" href="#">Быстрый просмотр</a>-->
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item hit">
             <h3>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
@@ -213,7 +213,7 @@
         </ul>
       </section>
 
-<div class="column">
+<div class="index-column">
       <article class="index-news">
         <h2 class="visually-hidden">Новости блога</h2>
         <p>Новое в нашем блоге</p>
@@ -284,43 +284,43 @@
       </div>
       <div class="footer-navigation">
         <ul class="footer-navigation-list">
+
           <li class="footer-navigation-item">
             <a href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a href="#">Наши документы</a>
           </li>
           <li class="footer-navigation-item">
             <a href="#">О производстве</a>
           </li>
           <li class="footer-navigation-item">
-            <a href="#">Наши документы</a>
-          </li>
-
-          <li class="footer-navigation-item">
             <a href="#">Экологические стандарты</a>
           </li>
+
         </ul>
       </div>
       <div class="footer-copyright">
-        <p>Сделано в
+        <p class="logo">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </p>
+        <p class="content">Сделано в
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2017</p>
+        &copy; 2018</p>
       </div>
     </footer>
 </div>
-
-
-
-
-    <section class="modal-feedback">
+<section class="modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <h3>Мы обязательно вам ответим!</h3>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="name">Как вас зовут?</label>
-          <input id="name" type="text" name="name" value="" placeholder="Как вас зовут?">
+          <input id="name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
-          <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-text">Напишите что-нибудь</label>
@@ -328,8 +328,9 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button type="button" class="modal-close">Закрыть окно</button>
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
       </section>
+      <div class="modal-overlay"></div>
 
       </div>
   </body>
