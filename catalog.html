@@ -15,18 +15,18 @@
                     <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
                   </a>
                   <ul class="site-navigation">
-                    <li class="site-navigation-item">
-                      <a class="site-navigation-link" href="#">Каталог</a>
+                    <li class="site-navigation-item navigation-current">
+                      <a href="#" class="site-navigation-link">Каталог</a>
                       <div class="navigation-sub-wrap">
                       <ul class="navigation-sub">
                         <li class="navigation-sub-item">
                           <a class="navigation-sub-first">Новинки</a>
                         </li>
-                        <li class="navigation-sub-item">
-                          <a href="catalog.html">Сливочное</a>
+                        <li class="navigation-sub-item navigation-current">
+                          <a class="navigation-sub-current">Сливочное</a>
                         </li>
                         <li class="navigation-sub-item">
-                          <a class="navigation-sub-hover">Щербеты</a>
+                          <a href="#">Щербеты</a>
                         </li>
                         <li class="navigation-sub-item">
                           <a href="#">Фруктовый лед</a>
@@ -46,7 +46,7 @@
                   </ul>
                   <ul class="user-navigation">
                     <li class="user-navigation-item">
-                      <a  class="user-navigation-link search-button" href="#">Поиск</a>
+                      <a  class="user-navigation-link search-button" href="#"><span class="visually-hidden">Поиск</span></a>
 
                       <section class="search-wrap">
                           <h2 class="visually-hidden">Форма поиска</h2>
@@ -128,15 +128,7 @@
 
           </li>
         </ul>
-
-      </nav>
-      <div class="working-info">
-          <p>С 10 до 20, ежедневно</p>
-          <b>8 812 450-25-25</b>
-        </div>
-    </header>
-    <main class="container">
-      <ul class="breadcrumbs">
+        <ul class="breadcrumbs">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -145,20 +137,32 @@
         </li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
+      <div class="working-info">
+          <p>С 10 до 20, ежедневно</p>
+          <span>8 812 450-25-25</span>
+        </div>
+
+      </nav>
+    </header>
+    <main class="page-content">
+
 
       <h1>Сливочное мороженое</h1>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-sorting">
+          <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sorting">
+            <div class="select-container">
+            <select class="filter-sorting" name="sorting">
               <option value="popular">по популярности</option>
               <option value="up">сначала недорогие</option>
               <option value="down">сначала дорогие</option>
               <option value="fat">по жирности</option>
             </select>
+          </div>
+            <span class="select-indicator"></span>
           </fieldset>
           <fieldset class="filter-price">
             <legend>Цена: 100 руб. - 500 руб.</legend>
@@ -172,19 +176,19 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-0" type="radio" name="fat" value="0">
-                <label class="visually-hidden" for="fat-0">0%</label>
+                <label for="fat-0">0%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-less10" type="radio" name="fat" value="less10" checked>
-                <label class="visually-hidden" for="fat-less10">до 10%</label>
+                <label for="fat-less10">до 10%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-less30" type="radio" name="fat" value="less30">
-                <label class="visually-hidden" for="fat-less30">до 30%</label>
+                <label for="fat-less30">до 30%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-more30" type="radio" name="fat" value="more30">
-                <label class="visually-hidden" for="fat-more30">выше 30%</label>
+                <label for="fat-more30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -193,23 +197,23 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="chocolate" type="checkbox" name="chocolate" checked>
-                <label class="visually-hidden" for="chocolate">шоколадные</label>
+                <label for="chocolate">шоколадные</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="sugar" type="checkbox" name="sugar" checked>
-                <label class="visually-hidden" for="sugar">сахарные присыпки</label>
+                <label for="sugar">сахарные присыпки</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="fruit" type="checkbox" name="fruit">
-                <label class="visually-hidden" for="fruit">фрукты</label>
+                <label for="fruit">фрукты</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="syrop" type="checkbox" name="syrop">
-                <label class="visually-hidden" for="syrop">сиропы</label>
+                <label for="syrop">сиропы</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="jam" type="checkbox" name="jam">
-                <label class="visually-hidden" for="jam">джемы</label>
+                <label for="jam">джемы</label>
               </li>
             </ul>
           </fieldset>
