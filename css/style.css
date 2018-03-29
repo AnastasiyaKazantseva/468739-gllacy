@@ -938,13 +938,13 @@ textarea:focus:-ms-input-placeholder {
 .catalog-item:hover::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -70px;
-  left: 0;
+  top: -7px;
+  right: -13px;
+  bottom: -81px;
+  left: -13px;
 
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  border-radius: 5px;;
 }
 .catalog-item > h3,
 .catalog-item > p,
@@ -963,7 +963,7 @@ textarea:focus:-ms-input-placeholder {
   text-align: center;
 }
 
-.catalog-item a {
+.catalog-item .item {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -973,9 +973,9 @@ textarea:focus:-ms-input-placeholder {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.catalog-item a:hover,
-.catalog-item a:focus,
-.catalog-item a:active,
+.catalog-item .item:hover,
+.catalog-item .item:focus,
+.catalog-item .item:active,
 .main-footer a:hover,
 .main-footer a:focus,
 .main-footer a:active,
@@ -1004,8 +1004,6 @@ textarea:focus:-ms-input-placeholder {
   background-position: 0 0;
 }
 
-
-
 .catalog-item-image img {
   width: 267px;
   height: 267px;
@@ -1013,22 +1011,27 @@ textarea:focus:-ms-input-placeholder {
 
   border-radius: 50%;
 }
-.catalog-item.hit .button-card {
+
+.catalog-item .button-card {
   position: absolute;
-  bottom: -50px;
+  bottom: -57px;
 
   display: none;
   box-sizing: border-box;
   width: 205px;
   margin: 0 calc((100% - 205px) / 2);
+  padding: 8px 18px;
 }
-.catalog-item.hit:hover .button-card {
+
+
+.catalog-item:hover .button-card {
   display: block;
 }
+
 .catalog-item-price {
   margin: 0;
   margin-top: -66px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 
   font-weight: 700;
   font-size: 30px;
@@ -1463,7 +1466,7 @@ textarea:focus:-ms-input-placeholder {
   line-height: 16px;
 }
 
-.footer-copyright a {
+.footer-copyright .content-link {
   color: #ffffff;
   text-decoration: none;
 
@@ -1813,6 +1816,7 @@ textarea:focus:-ms-input-placeholder {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  height: 1px;
   min-height: 36px;
   margin: 0;
 
@@ -1845,14 +1849,14 @@ textarea:focus:-ms-input-placeholder {
   opacity: 0.8;
 }
 
-.filter-input:hover + label::before,
-.filter-input:focus + label::before,
+.filter-option:hover label::before,
+.filter-option:focus label::before,
 .filter-option:hover label::after,
-.filter-input:focus + label::after {
+.filter-option:focus label::after {
   opacity: 1;
 }
 
-.filter-input:disabled + label::before {
+.filter-option:disabled label::before {
   opacity: 0.4;
 }
 

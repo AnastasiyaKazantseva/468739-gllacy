@@ -54,7 +54,7 @@
                         <section class="search-wrap">
                            <h2 class="visually-hidden">Форма поиска</h2>
                            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                              <label class="visually-hidden" for="search">Строка поиска</label>
+                              <label class="visually-hidden" for="search" hidden>Строка поиска</label>
                               <input id="search" type="search" name="search" value="" placeholder="Что ищем?">
                            </form>
                         </section>
@@ -65,11 +65,11 @@
                            <h2 class="visually-hidden">Личный кабинет</h2>
                            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                               <p>
-                                 <label class="visually-hidden" for="login-email">Электронная почта</label>
+                                 <label class="visually-hidden" for="login-email" hidden>Электронная почта</label>
                                  <input id="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
                               </p>
                               <p>
-                                 <label class="visually-hidden" for="password">Пароль</label>
+                                 <label class="visually-hidden" for="password" hidden>Пароль</label>
                                  <input id="password" type="password" name="password" value="" placeholder="Пароль">
                               </p>
                               <button class="button" type="submit">Войти</button>
@@ -154,7 +154,7 @@
                            <img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         </p>
                         <p class="catalog-item-price"><span>380</span>/кг</p>
-                        <!--<a class="button" href="#">Быстрый просмотр</a>-->
+                        <a class="button button-card" href="#">Быстрый просмотр</a>
                      </li>
                      <li class="catalog-item hit">
                         <h3>
@@ -164,17 +164,17 @@
                            <img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         </p>
                         <p class="catalog-item-price"><span>355</span>/кг</p>
-                        <!--<a class="button" href="#">Быстрый просмотр</a>-->
+                        <a class="button button-card" href="#">Быстрый просмотр</a>
                      </li>
                      <li class="catalog-item hit">
                         <h3>
-                           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                           <a class="item" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                         </h3>
                         <p class="catalog-item-image">
                            <img src="img/item-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         </p>
                         <p class="catalog-item-price"><span>415</span>/кг</p>
-                        <!--<a class="button" href="#">Быстрый просмотр</a>-->
+                        <a class="button button-card" href="#">Быстрый просмотр</a>
                      </li>
                   </ul>
                </section>
@@ -208,7 +208,7 @@
                      <h2 class="visually-hidden">Рассылка</h2>
                      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
                         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                        <label class="visually-hidden" for="newsletter-email">Электронная почта</label>
+                        <label class="visually-hidden" for="newsletter-email" hidden>Электронная почта</label>
                         <input id="newsletter-email" type="email" name="newsletter-email" placeholder="Электронная почта">
                         <button class="button button-newsletter" type="submit">Отправить</button>
                      </form>
@@ -298,10 +298,10 @@
                </div>
                <div class="footer-copyright">
                   <p class="logo">
-                     <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+                      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
                   </p>
                   <p class="content">Сделано в
-                     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+                     <a class="content-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
                      &copy; 2018
                   </p>
                </div>
@@ -312,15 +312,15 @@
             <h3>Мы обязательно вам ответим!</h3>
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                <p>
-                  <label class="visually-hidden" for="name">Как вас зовут?</label>
+                  <label class="visually-hidden" for="name" hidden>Как вас зовут?</label>
                   <input id="name" type="text" name="name" placeholder="Как вас зовут?">
                </p>
                <p>
-                  <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
+                  <label class="visually-hidden" for="feedback-email" hidden>Ваша почта для ответа?</label>
                   <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
                </p>
                <p>
-                  <label class="visually-hidden" for="feedback-text">Напишите что-нибудь</label>
+                  <label class="visually-hidden" for="feedback-text" hidden>Напишите что-нибудь</label>
                   <textarea id="feedback-text" rows="6" cols="30" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
                </p>
                <button class="button" type="submit">Отправить</button>
