@@ -152,31 +152,41 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filter-sorting">
             <legend>Сортировка:</legend>
-            <div class="select-container">
-            <select class="filter-sorting" name="sorting">
+
+            <select class="sorting" name="sorting">
               <option value="popular">по популярности</option>
               <option value="up">сначала недорогие</option>
               <option value="down">сначала дорогие</option>
               <option value="fat">по жирности</option>
             </select>
-          </div>
             <span class="select-indicator"></span>
+
           </fieldset>
           <fieldset class="filter-price">
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <div>
-              <input class="visually-hidden filter-input filter-input-range" id="price-range" type="range" min="100" max="500" step="5" name="price-range">
-              <label class="visually-hidden" for="price-range">Диапазон цен</label>
+            <legend>Цена:
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="100">руб. – </label>
+                <label class="max-price"><input name="max-price" type="text" value="500">руб.</label>
+             </div>
+            </legend>
+            <div class="range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
             </div>
           </fieldset>
           <fieldset class="filter-fat">
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="fat-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-0" type="radio" name="fat" value="0">
-                <label for="fat-0">0%</label>
+                <label for="fat-0" class="input-radio" for="fat-0">0%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="fat-less10" type="radio" name="fat" value="less10" checked>
@@ -194,7 +204,7 @@
           </fieldset>
           <fieldset class="filter-fillers">
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="fillers-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="chocolate" type="checkbox" name="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
@@ -221,7 +231,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog inner-page">
         <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -266,7 +276,7 @@
           </li>
           <li class="catalog-item">
             <h3>
-              <a href="#">Сливочное с брусничным джемом</a>
+              <a href="#">Сливочное с брусничным<br> джемом</a>
             </h3>
             <p class="catalog-item-image">
               <img src="img/item-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
@@ -306,7 +316,7 @@
           </li>
           <li class="catalog-item">
             <h3>
-              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+              <a href="#">Сливочно-ванильное с<br> кусочками шоколада</a>
             </h3>
             <p class="catalog-item-image">
               <img src="img/item-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -345,12 +355,12 @@
             <!-- <a class="button" href="#">Быстрый просмотр</a> -->
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item disabled">
-            <a>Назад</a>
+<ul class="pagination-list">
+          <li class="pagination-item prev">
+            <a class="no-hover disabled"><span class="visually-hidden">Назад</span></a>
           </li>
-          <li class="pagination-item pagination-item-current">
-            <a>1</a>
+          <li class="pagination-item">
+            <a class="no-hover current">1</a>
           </li>
           <li class="pagination-item">
             <a href="#">2</a>
@@ -364,11 +374,12 @@
           <li class="pagination-item">
             <a href="#">5</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">Вперед</a>
+          <li class="pagination-item next">
+            <a class="no-hover" href="#"><span class="visually-hidden">Вперед</span></a>
           </li>
         </ul>
       </section>
+
     </main>
     <footer class="main-footer">
         <div class="footer-social">

@@ -239,6 +239,8 @@ textarea:focus:-ms-input-placeholder {
   background-color: #ffffff;
 }
 
+
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slide-1.png");
@@ -706,13 +708,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.cart-button:hover::before,
+.cart-button:focus::before {
+  width: 21px;
+  height: 20px;
 
-.cart-button:hover,
-.cart-button:focus {
-  color: #ffffff;
-
-  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url("../img/basket-black.svg");
+  background-position: 0 0;
 }
+
 
 .cart-button-full {
   padding: 8px 17px;
@@ -934,6 +938,10 @@ input[type="radio"].visually-hidden {
 .catalog {
   padding: 0 27px;
 }
+.catalog.inner-page {
+  border-bottom: 1px solid rgba(225, 255, 255, 0.3);
+}
+
 
 .catalog-list {
   display: flex;
@@ -1614,9 +1622,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  width: 879px;
+  width: 890px;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   padding: 0 27px;
 }
 
@@ -1642,100 +1650,76 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.filter-sorting {
+  position: relative;
+}
+
 .filters-form legend {
   margin: 0;
   margin-bottom: 6px;
-  padding: 0 15px;
+  padding-left: 15px;
 
   font-size: 14px;
   line-height: 16px;
 }
 
 
-.filters-form div,
-.filters-form ul {
-  position: relative;
 
-  background-color: rgba(225, 255, 255, 0.2);
-  border-radius: 17px;
-}
 
-.select-container {
-  position: relative;
-
-  display: inline-block;
-  box-sizing: border-box;
-  width: 194px;
-  padding-right: 11px;
-  overflow: hidden;
-
-  color: #ffffff;
-
-  background-color: rgba(225, 255, 255, 0.2);
-}
-
-.select-container:hover,
-.select-container:focus {
-  background-color: #ffffff;
-}
-
-.filters-form select {
-  position: relative;
-  z-index: 2;
-
+.filters-form .sorting {
   display: block;
-  width: 130%;
+  width: 194px;
   height: 36px;
-  padding-right: 11px;
-  padding-left: 11px;
+  padding-right: 25px;
+  padding-left: 14px;
 
   font: inherit;
   color: #ffffff;
 
-  background-color: transparent;
+  background-color: rgba(225, 255, 255, 0.2);
   border: none;
   border-radius: 17px;
   outline: none;
   cursor: pointer;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
 }
 
-.filters-form select:hover,
-.filters-form select:focus {
+.sorting:hover,
+.sorting:focus {
   color: #323232;
+
+  background-color: #ffffff;
 }
 
 
 
-.select-container::after {
-  content: "";
+.select-indicator {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  z-index: 0;
+  top: 32px;
+  right: 14px;
 
   width: 11px;
   height: 15px;
+  margin: 0;
+  padding: 0;
 
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.select-container:hover::after,
-.select-container:focus::after {
+.sorting:hover + .select-indicator,
+.sorting:focus + .select-indicator {
   width: 11px;
   height: 15px;
 
   background-image: url("../img/select.svg");
-  background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-
-
-
-.filter-sorting option {
-  width: 194px;
+.sorting option {
   margin: 0;
   padding-top: 2px;
   padding-bottom: 6px;
@@ -1747,24 +1731,220 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
-
-.filters ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+.filter-price legend {
+  margin-bottom: 2px;
 }
 
+.range {
+  width: 218px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 20px;
+  padding-top: 16px;
+  padding-right: 21px;
+  padding-left: 21px;
+
+  background-color: rgba(225, 255, 255, 0.2);
+  border-radius: 17px;
+}
+
+.range-controls .scale {
+  height: 4px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 4px;
+  margin-left: 10%;
+
+  background: #ffffff;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #b1b1b1;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  top: 6px;
+
+  border: 10px solid #ffffff;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 14px;
+}
+
+.range-controls .toggle-min {
+  left: 33px;
+}
+
+.range-controls .toggle-max {
+  left: 132px;
+}
+.price-controls {
+  display: inline-block;
+}
+
+.price-controls input {
+  width: 25px;
+  margin: 0;
+  margin-right: 2px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+.fillers-list,
+.fat-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 36px;
+  margin: 0;
+
+  list-style: none;
+
+  background-color: rgba(225, 255, 255, 0.2);
+  border-radius: 17px;
+}
+
+.fat-list {
+  width: 414px;
+  padding: 0 15px;
+}
+
+.filter-option {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-option label {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.filter-input + label::before,
+.filter-input + label::after {
+  opacity: 0.8;
+}
+
+.filter-input:hover + label::before,
+.filter-input:focus + label::before,
+.filter-input:hover + label::after,
+.filter-input:focus + label::after {
+  opacity: 1;
+}
+.filter-input:disabled + label::before {
+  opacity: 0.4;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fillers-list {
+  width: 701px;
+  padding: 0 16px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 24px;
+  height: 20px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .filters-button {
+  height: 36px;
+  margin-top: 23px;
+  padding: 7px 27px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  vertical-align: top;
+  text-align: center;
   color: #ffffff;
 
   background-color: #9cb0a4;
   border: 2px solid #ffffff;
+  border-radius: 17px;
+  outline: none;
 }
 
 .filters-button:hover,
@@ -1781,31 +1961,85 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-item.prev a,
+.pagination-item.next a {
+  position: relative;
+}
+
+.pagination-item.prev a::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 2px;
+
+  width: 9px;
+  height: 14px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-position: 0 0;
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+
+.pagination-item.next a::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+
+  width: 9px;
+  height: 14px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-position: 0 0;
+}
+
 .pagination-item a {
+  display: block;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  padding: 4px;
+
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
+  text-decoration: none;
 
-  border-bottom: none;
+  cursor: pointer;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:not(.no-hover):hover,
+.pagination-item a:not(.no-hover):focus {
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  border-radius: 14px;
 }
 
-.pagination-item a:active,
-.pagination-list .pagination-item-current a {
+.pagination-item a:not(.no-hover):active,
+.pagination-list .current {
   color: #323232;
 
   background-color: #ffffff;
-  border-radius: 50%;
+  border-radius: 14px;
 }
 
 
-.pagination-list .disabled a {
-  color: rgba(255, 255, 255, 0.2);
-
-  background-color: transparent;
+.pagination-item .disabled,
+.pagination-item .current {
+  cursor: default;
 }
