@@ -12,6 +12,7 @@
   font-weight: 500;
   font-family: "Roboto";
   font-style: normal;
+  font-style: normal;
 
   src: local("Roboto Medium"), local("Roboto-Medium"),
   url("../fonts/robotomedium.woff2") format("woff2"),
